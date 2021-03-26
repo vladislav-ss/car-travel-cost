@@ -16,5 +16,5 @@ calculateButton.addEventListener('click', () => {
 function getResult(di, fe, fp) {
     neededFuel = di * fe / 100;
     cost = neededFuel * fp;
-    outputText.textContent = `This trip will require ${neededFuel} liters, which amounts to a total cost of ${cost}.`;
+    outputText.textContent = `The trip will require ${neededFuel} liters, which amounts to a total cost of ${cost}.`;
 }

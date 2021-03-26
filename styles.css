@@ -15,14 +15,18 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgba(124, 118, 148, 0.521);
+    background: linear-gradient(to right top, #2d4743, #6cdaebcb);
 }
 
 .calculator {
     text-align: center;
     max-width: 50vh;
     min-width: 50vh;
-    background-color: rgb(174, 185, 185);
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2rem);
     min-height: 30vh;
     padding: 0.5rem 0;
     border-radius: 1rem;
@@ -35,4 +39,43 @@ body {
 
 .output {
     overflow-wrap: break-word;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.output {
+    font-size: 17px;
+}
+
+.calculate {
+    min-width: 100px;
+    min-height: 35px;
+    background: linear-gradient(
+    to right bottom,
+    rgba(71, 141, 199, 0.7),
+    rgba(4, 72, 173, 0.678));
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 8px;
+    backdrop-filter: blur(2rem);
+}
+
+button:hover {
+    background-color: rgb(109, 165, 248);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+hr {
+    border: 1px solid rgba(128, 128, 128, 0.233);
 }
